@@ -1,0 +1,526 @@
+/* Seat Layout Page */
+
+.seats-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.curved-line {
+  width: 300px;
+  height: 80px;
+  border: solid 7px skyblue  ;
+  border-color: skyblue transparent transparent transparent;
+  border-radius: 100%/100px 100px 0 0;
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+.seat-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  flex-wrap: wrap;
+  margin-right: 250px;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* background-color: black; */
+  /* background-image: url('https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/tv-seat-512.png'); */
+}
+
+.selected {
+  background-color: green;
+}
+
+.blocked {
+  background-color: red;
+}
+.selected-seats-info{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+
+/* Booking Page */
+
+.booking-container{
+  width: 100%;
+  height: 632px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+  
+}
+.booking-box{
+  width: 60%;
+  height: 80%;
+  /* background-color: rgb(249, 39, 39); */
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+
+}
+.booking-image-div{
+  width: 50%;
+  height: 100%;
+  background-color: blueviolet;
+  /* overflow: hidden; */
+}
+.booking-image-div img{
+  width: 100%;
+  height: 100%;
+}
+.booking-details-div{
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* padding-top: 50px; */
+  row-gap: 50px;
+  align-items: center;
+}
+.booking-details{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.book-btn{
+  /* width: 100px; */
+  height: fit-content;
+  padding: 10px;
+  background-color: brown;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+
+}
+
+/* Ticket CSS */
+
+.ticket-container{
+    width: 100%;
+    height: 632px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.ticket-div{
+  margin-top: 50px;
+  width: 30%;
+  height: 85%;
+  /* background-color: rgb(249, 39, 39); */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  row-gap: 20px ;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+
+}
+.qr-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket-details-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  row-gap: 10px;
+}
+
+
+/* Yashwanth CSS */
+
+.carusol-container {
+  margin-top: 60px;
+  padding: 10px;
+  max-width: 100%;
+  max-height: 100vh;
+  overflow-x: hidden;
+  
+}
+.single-movie {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-top: 70px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url("https://images.hindustantimes.com/telugu/img/2022/12/31/1600x900/FlUCf15XgAcuTAV_1672505009966_1672505015227_1672505015227.jpg"); */
+  background-position: 50%;
+  background-size: cover;
+  filter: blur(4px); /* Adjust the blur amount as needed */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the blurred background */
+}
+/* footer */
+.icons{
+color: gray;
+}
+.icons:hover{
+color: white;
+}
+.foot-head{
+color: gray;
+}
+.foot-head:hover{
+color: white;
+}
+.footer{
+display: flex;
+}
+/* theaters */
+.theaters{
+margin-top: 70px;
+}
+.link{
+text-decoration: none;
+/* color: white; */
+color: green;
+}
+.link:hover{
+color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+  .carusol-container {
+    margin-top: 100px;
+   
+  }
+
+  .carousel-item img {
+    height: 1;
+    
+    object-fit: cover; /* Adjust max-height for smaller screens */
+  }
+  .rounded-circle {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .single-movie{
+    margin-top: 100px;
+  }
+  .movietrailer{
+    margin-top: 150px;
+    padding:60px;
+  }
+  .footer{
+    display: block;
+  }
+  /* movie theatres */
+  .theaters{
+    margin-top: 120px;
+
+  }
+}
+
+
+/* Admin CSS */
+.admin-container{
+
+  width: 100%;
+  height: 500px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  color: green;
+  padding: 80px 60px;
+}
+
+/* .admin-container h3{
+  margin-top: 70px ;
+  margin-left: 50px;
+} */
+.admin-panel{
+  padding: 10px;
+}
+
+.drop-down-menu{
+  display: flex;
+  column-gap: 50px;
+}
+.admin-dashboard{
+  color: green;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+
+
+
+/* Css for date */
+.date-button,
+.date-button:hover,
+.date-button:focus,
+.date-button:active {
+  color: #28a745 !important;
+  border-color: #28a745 !important;
+}
+.date-btn:active{
+  background-color: green;
+  color: white;
+
+}
+
+.selected {
+  color: white !important;
+  background-color: #27793a !important;
+}
+
+
+/* 
+login component css starts here */
+
+/* login */
+.login{
+  width: 100%;
+  
+  /* background-color: red; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 10px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  
+}
+.login-btm{
+  margin-top: 40px;
+}
+.forms{
+  width: 70%;
+  height: 400px;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  /* column-gap: 10px; */
+ 
+}
+/* half part */
+.form-text{
+  width: 40%;
+  height: 400px;
+  /* padding: 10px 10px; */
+  background-color: blueviolet;
+  /* overflow: hidden; */
+}
+.form-heading{
+  font-size: 23px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.form-login{
+  font-size: 23px;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.form-acess{
+  font-size: 18px;
+  margin-top: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 200;
+}
+/* second part */
+.form-inp{
+  width: 70%;
+  height: 400px;
+  padding: 40px 0px;
+  background-color: #69afe4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+}
+.inp{
+  width: 70%;
+  padding: 15px 0px;
+  /* background-color: orange; */
+  margin-top: 15px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid green;
+  text-indent: 18px;
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  
+}
+
+.btm{
+  padding: 10px 20px;
+  /* margin-top: 10px; */
+  color: white;
+  border: 1px solid #343a40;
+  background-color: #343a40;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.loginbtnBox{
+  width:40%;
+  height: 40%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+}
+
+.backtoHomeBtn{
+  text-decoration: none;
+  color: white;
+}
+.link-reg{
+  color: blue;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.error{
+  color: red;
+  padding: 10px 20px;
+  background-color: white;
+  opacity: 1;
+}
+.success{
+  color: green;
+  padding: 10px 20px ;
+  background-color: white;
+  opacity: 1;
+}
+.invisible{
+  width: 100%;
+  opacity: 0;
+}
+
+.login-image{
+  /* width: 100%; */
+  height: 100%;
+}
+
+
+/* Register component css starts here */
+.register-image{
+  width: 100%;
+  height: 110%;
+}
+
+.register-btm{
+  margin-top: 12px;
+}
+.form-input{
+  width: 100%;
+  height: 400px;
+  padding: 40px 0px;
+  /* background-color: gold; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  position: absolute;
+  top: 100px;
+}
+.regs{
+  padding-top: 30px;
+  font-size: 20px;
+  /* margin-top: 10px; */
+  /* background-color: yellow; */
+  
+}
+.r{
+  width: 50%;
+  height: 800px;
+  padding: 10px 20px;
+  background-color: rgb(215, 247, 184);
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgb(215, 247, 184) ;
+}
+.reg{
+  margin-top: 10px;
+}
+.link-log{
+  color: blue;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+/* Profile */
+
+.profile-main-box{
+  width: 100%;
+  height: 532px;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 100px;
+}
+.profile-container{
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  /* border: 2px solid black; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
+  padding: 30px;
+}
+.profile-data{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 20px;
+}
